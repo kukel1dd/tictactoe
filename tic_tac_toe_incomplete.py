@@ -2,9 +2,6 @@ from random import randrange
 b =[[1, 2, 3], [4, "X", 6], [7, 8, 9]]
 game = True
 
-
-
-
 def display_board(b):
     # The function accepts one parameter containing the board's current status
     # and prints it out to the console.
@@ -170,27 +167,7 @@ def victory_for(b, sign):
         if cwin == False and pwin == False:
             print(draw)
             game = False
-  
-
-
-
-
- 
-
-
-
-
     
-        
-
-        
-        
-        
-    
-    
-
-
-   
 
 def draw_move(b):
      # The function draws the computer's move and updates the board.
@@ -207,13 +184,7 @@ def draw_move(b):
             (row,col) = comp_tuple
             b[row][col] = "X"
             comp_turn = False
-
-
-
-
-
-     
-    
+   
          
 while game:
     display_board(b)
